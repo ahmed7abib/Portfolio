@@ -1,0 +1,220 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* hero */
+    .hero{
+        background-position-x: right !important;
+    }
+    /* profile */
+    .profile-img{
+        height: 345px;
+    }
+     /* footer */
+    .footer-grid {
+        display: block;
+        gap: 0;
+    }
+    .contact-info {
+        display: block;
+        gap: 0;
+        justify-content: center;
+    }
+    .contact-info a {
+        display: block;
+        margin: 10px 0;
+    }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+ 
+  
+    .nav-links {
+        display: none; /* Hide links initially on mobile */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 55px;
+        left: 0px;
+        background-color: #ffffff;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when "active" class is added by JS */
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+     .hamburger {
+        display: flex; /* Show hamburger icon as a flex container */
+        flex-direction: column; /* Stack the bars vertically */
+        justify-content: space-between;
+        height: 24px; /* Adjust height to fit the 3 bars nicely */
+    }
+     /* hero */
+    .hero{
+        background-position-x: right !important;
+    }
+    /* about */
+    #about h1 {
+        margin-top: 20px;
+    }
+    /* profile */
+    .profile-img{
+        height: 280px;
+    }
+    /* timeline */
+    .timeline-item {
+        padding: 1rem;
+    }
+    .timeline-item ul {
+        margin-left: 0.5rem;
+        padding-left: 1rem;
+    }
+    /*  course */
+  
+    .course-card {
+        width: 80%;
+    }
+ 
+    /* footer */
+    .footer-grid {
+        display: block;
+        gap: 0;
+    }
+    .contact-info {
+        display: block;
+        gap: 0;
+        justify-content: center;
+    }
+    .contact-info a {
+        display: table;
+        margin: 10px 0;
+    }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  
+    .nav-links {
+        display: none; /* Hide links initially on mobile */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 55px;
+        left: 0px;
+        background-color: #ffffff;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when "active" class is added by JS */
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+   .hamburger {
+        display: flex; /* Show hamburger icon as a flex container */
+        flex-direction: column; /* Stack the bars vertically */
+        justify-content: space-between;
+        height: 24px; /* Adjust height to fit the 3 bars nicely */
+    }
+    /* hero */
+    .hero{
+        background-position-x: right !important;
+    }
+    /* about */
+    #about h1 {
+        margin-top: 20px;
+    }
+    /* profile */
+    .profile-img{
+        height: 280px;
+    }
+    /* timeline */
+    .timeline-item {
+        padding: 1rem;
+    }
+    .timeline-item ul {
+        margin-left: 0.5rem;
+        padding-left: 1rem;
+    }
+    /*  course */
+  
+    .course-card {
+        width: 80%;
+    }
+ 
+    /* footer */
+    .footer-grid {
+        display: block;
+        gap: 0;
+    }
+    .contact-info {
+        display: block;
+        gap: 0;
+        justify-content: center;
+    }
+    .contact-info a {
+        display: table;
+        margin: 10px 0;
+    }
+}
